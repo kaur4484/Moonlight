@@ -17,7 +17,7 @@ namespace RK_LAB1.Controllers
         }
 
         [HttpGet]
-        public ViewResult StudentForm()
+        public ViewResult LogIn()
         {
             return View();
         }
@@ -30,7 +30,7 @@ namespace RK_LAB1.Controllers
 
 
         [HttpPost]
-       public ViewResult StudentForm(Student student)
+       public ViewResult LogIn(Student student)
   {
             if (ModelState.IsValid)
             {
@@ -43,31 +43,11 @@ namespace RK_LAB1.Controllers
             }
         }
 
-
-     /*   [HttpPost]
-        public ViewResult CourseForm(Course course)
-        {
-            if (ModelState.IsValid)
-            {
-                CourseRepository.AddResponse(course);
-                return View("CourseResponse", course);
-            }
-            else
-            {// The validation error
-                return View();
-            }
-        }
-        */
         public ViewResult Summary()
         {
 
             return View(StudentRepository.Responses);
         }
 
-        public ViewResult CourseSummary()
-        {
-
-            return View(CourseRepository.Responses);
-        }
     }
 }

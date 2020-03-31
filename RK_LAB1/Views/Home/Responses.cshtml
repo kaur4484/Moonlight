@@ -1,17 +1,14 @@
 ﻿@model RK_LAB1.Models.User
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Thank you</title>
-    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
-</head>
-<body>
-    <p>
-        <h1>Thank you, @Model.firstName!</h1>
-        
-    </p>
-    <h3>Click <a class="nav-link" asp-action="Summary"> here</a> to see all info. </h3>
-</body>
-</html>
+@{ 
+    Layout = "_Layout";
+}
+
+    <div>
+        <form asp-controller="Jobs" asp-action="Index">
+            <p>
+                Title: <input type="text" name="SearchString">
+                <input type="submit" value="Filter" />
+            </p>
+        </form>
+    </div>

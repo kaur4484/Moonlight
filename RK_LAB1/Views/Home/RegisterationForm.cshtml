@@ -1,4 +1,4 @@
-﻿@model RK_LAB1.Models.Student
+﻿@model RK_LAB1.Models.User
 @{
 }
 <!DOCTYPE html>
@@ -19,23 +19,17 @@
                 <div asp-validation-summary="All"></div>
                 <div class="form-group">
                     <label asp-for="firstName">User Name:</label>
-                    <input class="form-control" asp-for="firstName" />
+                    <input class="form-control" asp-for="UserName" />
                 </div>
                 <div class="form-group">
                     <label asp-for="lastName">Email:</label>
-                    <input class="form-control" asp-for="lastName" />
+                    <input class="form-control" asp-for="Email" />
                 </div>
 
                 <div class="form-group">
                     <label asp-for="lastName">Password:</label>
-                    <input class="form-control" asp-for="lastName" />
+                    <input class="form-control" asp-for="Password" />
                 </div>
-
-                <div class="form-group">
-                    <label asp-for="lastName">Confirm Password:</label>
-                    <input class="form-control" asp-for="lastName" />
-                </div>
-
            
                 <div class="text-center">
                     <button class="btn btn-primary" type="submit">

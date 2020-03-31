@@ -1,4 +1,4 @@
-﻿@model RK_LAB1.Models.Student
+﻿@model RK_LAB1.Models.User
 @{Layout = null;
 }
 <!DOCTYPE html>
@@ -18,12 +18,12 @@
             <form class="p-a-1" asp-action="StudentForm" method="post">
                 <div asp-validation-summary="All"></div>
                 <div class="form-group">
-                    <label asp-for="firstName">User Name:</label>
-                    <input class="form-control" asp-for="firstName" />
+                    <label asp-for="UserName">User Name:</label>
+                    <input class="form-control" asp-for="UserName" />
                 </div>
                 <div class="form-group">
-                    <label asp-for="lastName">Password:</label>
-                    <input class="form-control" asp-for="lastName" />
+                    <label asp-for="password">Password:</label>
+                    <input class="form-control" asp-for="password" />
                 </div>
 
                 <a asp-action="RegisterationForm">Don't have an account</a>

@@ -30,7 +30,7 @@ namespace RK_LAB1.Controllers
 
 
         [HttpPost]
-       public ViewResult LogIn(Student student)
+       public ViewResult LogIn(User student)
   {
             if (ModelState.IsValid)
             {

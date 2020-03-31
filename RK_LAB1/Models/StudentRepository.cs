@@ -8,13 +8,13 @@ namespace RK_LAB1.Models
 
     public class StudentRepository
     {
-        private static List<Student>
-          responses = new List<Student>();
-        public static IEnumerable<Student> Responses
+        private static List<User>
+          responses = new List<User>();
+        public static IEnumerable<User> Responses
         {
             get { return responses; }
         }
-        public static void AddResponse(Student student)
+        public static void AddResponse(User student)
         {
             responses.Add(student);
         }
